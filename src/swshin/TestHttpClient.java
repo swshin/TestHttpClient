@@ -19,7 +19,7 @@ public class TestHttpClient {
 	}
 
 	public void testIt() {
-		String u = "https://m8brrdkpo3.execute-api.ap-northeast-1.amazonaws.com/prod/event/counts?pmoNos=11";
+		String u = "https://xxx.xxx.xxx.xxx";
 
 		final URL url;
 
@@ -48,7 +48,7 @@ public class TestHttpClient {
 			try {
 
 				System.out.println("Response Code : " + con.getResponseCode());
-//				System.out.println("Cipher Suite : " + con.getCipherSuite());
+				// System.out.println("Cipher Suite : " + con.getCipherSuite());
 				System.out.println("\n");
 
 				Certificate[] certs = con.getServerCertificates();
@@ -67,9 +67,7 @@ public class TestHttpClient {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-
 		}
-
 	}
 
 	private void print_content(HttpsURLConnection con) {
